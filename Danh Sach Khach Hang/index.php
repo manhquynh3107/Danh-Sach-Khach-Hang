@@ -19,7 +19,7 @@
     <title>Document</title>
 </head>
 <body>
-<table border="1">
+<table border="10">
     <caption><h1> Danh Sach Khach Hang</h1></caption>
     <tr>
         <td>STT</td>
@@ -33,34 +33,41 @@
 </html>
 <?php
 $customerlist = array(
-    "1" => array("ten" => "Mai Văn Hoàn",
-        "ngaysinh" => "1983-08-20",
-        "diachi" => "Hà Nội",
-        "anh" => "images/img1.jpg"),
-    "2" => array("ten" => "Nguyễn Văn Nam",
-        "ngaysinh" => "1983-08-20",
-        "diachi" => "Bắc Giang",
-        "anh" => "images/img2.jpg"),
-    "3" => array("ten" => "Nguyễn Thái Hòa",
-        "ngaysinh" => "1983-08-21",
-        "diachi" => "Nam Định",
-        "anh" => "images/img3.jpg"),
-    "4" => array("ten" => "Trần Đăng Khoa",
-        "ngaysinh" => "1983-08-22",
-        "diachi" => "Hà Tây",
-        "anh" => "images/img4.jpg"),
-    "5" => array("ten" => "Nguyễn Đình Thi",
-        "ngaysinh" => "1983-08-17",
-        "diachi" => "Hà Nội",
-        "anh" => "images/img5.jpg")
+    "1" => array("ten" => "Đào Mạnh Quỳnh",
+        "ngaysinh" => "2002-07-31",
+        "diachi" => "Trái Đất",
+        "anh" => ""),
+    "2" => array("ten" => "Quỳnh Đẹp Trai Dã Man",
+        "ngaysinh" => "2002-07-31",
+        "diachi" => "Trái Đất",
+        "anh" => ""),
+    "3" => array("ten" => "Ơ Quỳnh Đẹp Trai Vãi Lúa",
+        "ngaysinh" => "2002-07-31",
+        "diachi" => "Trái Đất",
+        "anh" => ""),
+    "4" => array("ten" => "Quỳnh Đẹp Trai",
+        "ngaysinh" => "2002-07-31",
+        "diachi" => "Trái Đất",
+        "anh" => ""),
+    "5" => array("ten" => "Quỳnh Siêu Đẹp Trai",
+        "ngaysinh" => "2002-07-31",
+        "diachi" => "Trái Đất",
+        "anh" => "")
 );
-foreach ($customerlist as $key => $value){
-    echo "<tr>";
+foreach($customerlist as $key => $values){
+    echo "<tr>"."<br/>";
+
     echo "<td>".$key."</td>";
+
     echo "<td>".$values['ten']."</td>";
+
     echo "<td>".$values['ngaysinh']."</td>";
+
     echo "<td>".$values['diachi']."</td>";
-    echo "<td><image src ='".$values['anh']."' width = '60px' height ='60px'/></td>";
+
+    echo "<td><image src ='".$values['anh']."' width = '60px' height ='60px'/></td>"."<br/>";
+
     echo "</tr>";
 }
+
 ?>
